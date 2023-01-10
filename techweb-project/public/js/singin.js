@@ -320,6 +320,7 @@ $(document).ready(function(){
     $("#search-match").submit(function(event){
         event.preventDefault();
         var regione = $('#regione').val();
+        regione.charAt(0).toUpperCase() + regione.slice(1);
         var split = $('#dateissuebegan').val();
         var giorno = split.split("T")[0];
         var oras = split.split("T")[1];
@@ -342,6 +343,7 @@ $(document).ready(function(){
                  var prezzocampo = oggetto.prezzo;
                  var regionecampo = oggetto.regione;
                  var cittacampo   = oggetto.citta;
+                 
                  
                  
                 $('#card-con').append('<div id="card-cam" class="card card-card"> <div class="imgBx"> <img src="images/card.png"></div><div class="contentBx"><h2 class="nomecampo" id="nome-camp">'+ nomecampo +'</h2><h3 class="prezzocampo">'+ prezzocampo +'€'+'</h3> <h3> ' + cittacampo +' '+ regionecampo +'</h3><h4> alle: ' + ora +' dell giorno: '+ giorno +'</h4><button  id="button-verifica" class="button-37 btn-open" role="button">clicca e prenota</button></div></div>' );
