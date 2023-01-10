@@ -1,6 +1,7 @@
 # techweb-project
 # How to start the server?
 Start your terminal in the techweb-project folder and use the command: "node server"
+Then use localhost3000 to run the application
 # Main Purpose
 Soccerbooking is a web-application created in order to book football pitches faster.
 Using this application you can skip long waiting times on the phone.
