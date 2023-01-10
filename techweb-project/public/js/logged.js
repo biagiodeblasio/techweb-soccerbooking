@@ -1,6 +1,5 @@
 
 
-
 function userloginresp(){
    var testgog =  $("#email-in").val();
 
@@ -19,7 +18,9 @@ $(document).ready(function(){
     var islogged =userloginresp();
     var btn = document.createElement("a");
     btn.innerHTML = islogged;
+    
     if (islogged=="undefined"){
+        document.getElementById("name").style.display = 'none';
         localStorage.removeItem('user');
         console.log(undefined);
     }

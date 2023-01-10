@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <input type="hidden" id="answer" name="answer" readonly/>
-                    <li><a id="logged" href=></a></li>
-                    <li><a href=singin.html>Home</a></li>
-                    <li><a id="page2" href=index.html>page2</a></li>
-                    <li><a href=>page3</a></li>
+                    <li><a style="display: none;" id="logged" href=></a></li>
+                    <li><a  style="display: none;" href=singin.html>Home</a></li>
+                    <li><a  style="display: none;" id="page2" href=index.html>page2</a></li>
+                    <li><a  style="display: none;" href=>page3</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,6 +29,7 @@
     <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
+                <button class="form__button_google" onclick="signIn()">Sign In With Google</button>
                 <p>Ideata da Luca Di Meglio, Giuseppe Langella e Biagio De Blasio<br>
                     SoccerBooking nasce con l'intento di fornire una panoramica dei campi da gioco disponibili in tempo reale.<br>
                     Inserisci i filtri richiesti e scegli il luogo e l'orario preferito per giocare la tua partita<br>e trova i campi da calcetto disponibili
@@ -49,7 +50,7 @@
                         <input type="password"  class="form__input" id="pass-in" autofocus placeholder="Password" name="passwordin">
                         <div class="form__input-error-message"></div>
                     </div>
-                    <button class="form__button_google" onclick="signIn()">Sign In With Google</button>
+                    
                     <button class="form__button" id="formbutton" type="submit">Continue</button>
                     <p class="form__text">
                         <a href="#" class="form__link">Forgot your password?</a>
@@ -58,7 +59,7 @@
                         <a class="form__link" href=singin.html id="linkCreateAccount">Don't have an account? Create account</a>
                     </p>
                 </form>
-                <button class="form__button_google" onclick="signIn()">Sign In With Google</button>
+                
             </div>
         </div>
     </section>
@@ -104,8 +105,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">page2</a></li>
-                    <li><a href="">page3</a></li>
+                    
                 </ul>
             </nav>
             <div class="social">
