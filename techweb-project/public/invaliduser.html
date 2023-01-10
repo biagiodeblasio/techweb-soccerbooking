@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utilities.css">
+     <title>Soccer Booking</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h2 class="logo">SoccerBooking</h2>
+            <nav>
+                <ul>
+                    <li><a id="logged" href=></a></li>
+                    <li><a href=singin.html>Home</a></li>
+                    <li><a id="page2" href=index.html>page2</a></li>
+                    <li><a href=>page3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <p>Ideata da Luca Di Meglio, Giuseppe Langella e Biagio De Blasio<br>
+                    SoccerBooking nasce con l'intento di fornire una panoramica dei campi da gioco disponibili in tempo reale.<br>
+                    Inserisci i filtri richiesti e scegli il luogo e l'orario preferito per giocare la tua partita<br>e trova i campi da calcetto disponibili
+                    più vicini a te!</p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase-form card" id="loginform">
+                <form class="form__ form" id="createAccount" method="post" action="/">
+                    <h1 class="form__title">Create Account</h1>
+                    <div class="form__message form__message--error"></div>
+                    <div class="form__input-group">
+                        <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" name="user">
+                        <div class="form__input-error-message">username già presente scegliere un altro</div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="text" class="form__input"  id="email-rec" autofocus placeholder="Email Address"- name =email>
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="password" class="form__input" id="pass-rec" autofocus placeholder="Password" name="password">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="password" class="form__input" id="pass-rec2"   autofocus placeholder="Confirm password" name="passwordcon">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <button class="form__button" type="submit">Continue</button>
+                    <p class="form__text">
+                        <a class="form__link" href=index.html id="linkLogin">Already have an account? Sign in</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Welcome to the best platform for booking your match!
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <img class="photo-stats" src="images/calcio.png"></i>
+                    <h3>+400</h3>
+                    <p class="text-secondary">Campi di calcio</p>
+                </div>
+                <div>
+                    <img class="photo-stats" src="images/money-refund.png"></i>
+                    <h3></h3>
+                    <p class="text-secondary">Rimborso completo fino a 3 hr prima del match</p>
+                </div>
+                <div>
+                    <img class="photo-stats" src="images/booking.png"></i>
+                    <h3>+3000</h3>
+                    <p class="text-secondary">prenotazioni al giorno</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Soccer Booking
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">page2</a></li>
+                    <li><a href="">page3</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/singin.js"></script>
+</html>

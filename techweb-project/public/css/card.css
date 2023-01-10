@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (min-width: 800px) {
+  .container-card{
+    display: flex;
+    position: relative;
+  }
+}
+.container-card{
+  position: relative;
+}
+@media only screen 
+and (max-device-width: 600px)
+ {
+  .container-card .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 40px;
+  }
+  }
+
+.container-card .card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.container-card .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-card .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container-card .card:after{
+    content: 'SoccerBooking';
+    position: absolute;
+    top: 68%;
+    left: 2%;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    color: #9bdc28;
+}
+
+.container-card .card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container-card .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container-card .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.container-card .card .contentBx{
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    text-align: inherit;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container-card .card:hover .contentBx{
+  height: 210px;
+}
+
+.container-card .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: black;
+  margin: 0;
+}
+
+.container-card .card .contentBx .size, .container-card .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container-card .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container-card .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container-card .card .contentBx .size h3, .container-card .card .contentBx .color h3{
+  color:black;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container-card .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-card .card .contentBx .size span:hover{
+  background: #9bdc28;
+}
+
+.container-card .card .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container-card .card .contentBx .color span:nth-child(2){
+  background: #9bdc28;
+}
+
+.container-card .card .contentBx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.container-card .card .contentBx .color span:nth-child(4){
+  background: #e91e63;
+}
+
+.container-card .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container-card .card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+.container-card .card .contentBx .size h3 input{
+    color:black  !important;
+}
+#date-time{
+color: red;
+}
+#time{
+color:red;
+}
+
+input[type="datetime-local"] {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    line-height: 1;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+#text-form-item{
+    font-size: 25px;
+    font-family: math;
+    color: white
+}
+#text-form-item2{
+    font-size: 25px;
+    font-family: math;
+    color: white
+}
+#regione{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    line-height: 1;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+#fixshowcase{
+    position: relative;
+    top: 75px;
+    height: 310px;
+    width: 400px;
+    padding: 15px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+#centratext{
+text-align: initial;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0px 0;
+}
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 40px;
+    padding: 0px;
+    width: 210px;
+    height: 40px;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 400px; /* Full width */
+  height: 400px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

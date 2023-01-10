@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/formutility.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+     <title>Soccer Booking</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h2 class="logo">SoccerBooking</h2>
+            <nav>
+                <ul>
+                    <input type="hidden" id="answer" name="answer" readonly/>
+                    <li><a id="logged" href=></a></li>
+                    <li><a href=singin.html>Home</a></li>
+                    <li><a id="page2" href=index.html>page2</a></li>
+                    
+                    
+                        
+                      </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <p> inserire regione, giorno e ora per vedere i campi disponibili:</p>
+            
+            <div id="fixshowcase" class="showcase-form card"   >
+                <form class="form__" id="search-match" method="post" action="/search" >         
+                            <h1 id="text-form-item" >inserisci qui la regione:</h1>
+                            <div class="form__input-group">
+                                <input id="regione" type="text" placeholder="es: campania" required style=" color:black;">
+                            </div>
+
+                            <h1 id="text-form-item2">inserisci qui il giorno e l'ora:</h1>
+                            <div class="form__input-group">
+                                <input type="datetime-local" 
+                            id="dateissuebegan" 
+                            name="dateissuebegan" 
+                            style=" color:white;
+                            height: 2.3rem; 
+                            font-size: 1em;"
+                             min="2023-01-01" 
+                             max="2023-12-31"
+                             required>
+                            </div>
+
+                            <div class="td" id="s-cover">
+                                <button type="submit">
+                                  <div id="s-circle"></div>
+                                  <span></span>
+                                </button>
+                              </div>
+                       
+                      </div>
+                </form>
+            </div>
+
+
+                
+              
+              <p> campi disponibili:</p>
+              
+           
+        </div>
+        
+    </section>
+    <div id="card-con" class="container-card">
+       
+        
+      </div>
+      
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                
+                Welcome to the best platform for booking your match!
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <img class="photo-stats" src="images/calcio.png"></i>
+                    <h3>+400</h3>
+                    <p class="text-secondary">Campi di calcio</p>
+                </div>
+                <div>
+                    <img class="photo-stats" src="images/money-refund.png"></i>
+                    <h3></h3>
+                    <p class="text-secondary">Rimborso completo fino a 3 hr prima del match</p>
+                </div>
+                <div>
+                    <img class="photo-stats" src="images/booking.png"></i>
+                    <h3>+3000</h3>
+                    <p class="text-secondary">prenotazioni al giorno</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">×</span>
+      <div id="after-mod">
+        
+      </div>
+     
+    </div>
+  
+  </div>
+  
+<div class="overlay hidden"></div>
+    
+
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <body>
+                   
+                  </body>
+                <h1>Soccer Booking
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">page2</a></li>
+                    <li><a href="">page3</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="js/singin.js"></script>
+<script src="js/logged.js"></script>
+
+</html>
