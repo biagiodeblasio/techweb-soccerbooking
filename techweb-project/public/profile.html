@@ -17,7 +17,6 @@
                 <ul>
                     <input type="hidden" id="answer" name="answer" readonly/>
                     <li><a id="name" href=></a></li>
-                    <li><a id="logged" href=></a></li>
                     <li><a href=singin.html>Home</a></li>
                     
                     
@@ -51,27 +50,7 @@
 
 
 
-            <div class="showcase-form card" id="loginform"  >
-                <form class="form__" id="login" method="post" >
-                    
-                    <h1 class="form__title">Login</h1>
-                    <div class="form__message form__message--error"></div>
-                    <div class="form__input-group">
-                        <input type="text" class="form__input"  id="email-in" autofocus placeholder="Username or email" name="emailin">
-                        <div class="form__input-error-message"></div>
-                    </div>
-                    <div class="form__input-group">
-                        <input type="password"  class="form__input" id="pass-in" autofocus placeholder="Password" name="passwordin">
-                        <div class="form__input-error-message"></div>
-                    </div>
-                    <button class="form__button" id="formbutton" type="submit">Continue</button>
-                    <p class="form__text">
-                        <a href="#" class="form__link">Forgot your password?</a>
-                    </p>
-                    <p class="form__text">
-                        <a class="form__link" href=singin.html id="linkCreateAccount">Don't have an account? Create account</a>
-                    </p>
-                </form>
+            
             </div>
         </div>
     </section>
@@ -152,7 +131,7 @@
         .then(data => data.json())
         .then((info) => {
             console.log(info)
-            const el = document.getElementById('container');
+            const el = document.getElementById('logged');
             document.getElementById('name').innerHTML += info.name
             document.getElementById('image').setAttribute('src',info.picture)
         })
