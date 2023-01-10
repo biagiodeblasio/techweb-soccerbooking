@@ -233,7 +233,7 @@ function theFunction () {
                 var modal = document.getElementById('myModal');
                 modal.style.display = "block";
                 window.scrollTo(0,0);
-                $('#after-mod').append(' <div  class="container eliminac"> <h3 class="stats-heading text-center my-1"> campo disponibile conferma con paypal!</h3> </div>');
+                $('#after-mod').append(' <div  class="container eliminac"> <h3 class="stats-heading text-center my-1"> campo prenotato!</h3> </div>');
                 
                 $.ajax({
                     method: 'post',
@@ -268,7 +268,7 @@ span.onclick = function() {
                 modal.style.display = "block";
                 window.scrollTo(0,0);
                 
-                $('#after-mod').append(' <div class="container eliminac"> <h3 class="stats-heading text-center my-1"> campo non disponibile</h3> </div>');
+                $('#after-mod').append(' <div class="container eliminac"> <h3 class="stats-heading text-center my-1"> campo non disponibile! </h3> </div>');
 
                 // Get the button that opens the modal
                  var btn = document.getElementById("button-verifica"); 
@@ -335,7 +335,7 @@ $(document).ready(function(){
                 if (el != null){
                     $(".card-card").remove();}
                 if (data[0]==null){
-                    $('#card-con').append('<div id="card-cam" class="card card-card"> <div class="imgBx"> <img src="images/card.png"></div><div class="contentBx"><h1 id="centratext">NESSUN RISULTATO DI RICERCA. </h1><button class="button-37" role="button">verifica disponibilità</button></div></div>' );
+                    $('#card-con').append('<div id="card-cam" class="card card-card"> <div class="imgBx"> <img src="images/card.png"></div><div class="contentBx"><h1 id="centratext">NESSUN RISULTATO DI RICERCA. </h1></div></div>' );
                 }
                 data.forEach(function(oggetto){
                  var nomecampo = oggetto.campo;
@@ -344,7 +344,7 @@ $(document).ready(function(){
                  var cittacampo   = oggetto.citta;
                  
                  
-                $('#card-con').append('<div id="card-cam" class="card card-card"> <div class="imgBx"> <img src="images/card.png"></div><div class="contentBx"><h2 class="nomecampo" id="nome-camp">'+ nomecampo +'</h2><h3 class="prezzocampo">'+ prezzocampo +'€'+'</h3> <h3> ' + cittacampo +' '+ regionecampo +'</h3><h4> alle: ' + ora +' dell giorno: '+ giorno +'</h4><button  id="button-verifica" class="button-37 btn-open" role="button">verifica disponibilità</button></div></div>' );
+                $('#card-con').append('<div id="card-cam" class="card card-card"> <div class="imgBx"> <img src="images/card.png"></div><div class="contentBx"><h2 class="nomecampo" id="nome-camp">'+ nomecampo +'</h2><h3 class="prezzocampo">'+ prezzocampo +'€'+'</h3> <h3> ' + cittacampo +' '+ regionecampo +'</h3><h4> alle: ' + ora +' dell giorno: '+ giorno +'</h4><button  id="button-verifica" class="button-37 btn-open" role="button">clicca e prenota</button></div></div>' );
                 user =$('#nome-camp').val();
                 if(user != ""){
                     localStorage.setItem('campo', user); 

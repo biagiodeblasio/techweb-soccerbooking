@@ -501,6 +501,7 @@ pre {
 }
 
 .form__button {
+  margin:2px;
   width: 100%;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -511,6 +512,19 @@ pre {
   outline: none;
   cursor: pointer;
   background: var(--color-primary);
+}
+.form__button_google {
+  margin:2px;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: rgb(10, 105, 238)
 }
 
 .form__button:hover {
